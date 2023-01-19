@@ -16,12 +16,18 @@
     display: grid;
 
     grid-template-areas: "logo  encabezado"
-                         "productos servicios"
-                         "productos servicios"
-                         "pie_de_pagina pie_de_pagina";
+        "productos servicios"
+        "productos servicios"
+        "pie_de_pagina pie_de_pagina";
 
     grid-template-columns: 15vw 85vw;
     grid-template-rows: 15vh 35vh 35vh 15vh;
+}
+
+.nosotros{
+    display: grid;
+
+    grid-template-areas: "encabezado encabezado";
 }
 
 header{
@@ -47,11 +53,12 @@ header{
     align-items: center;
 }
 
-nav{ 
+nav{
     display: flex;
     justify-content: flex-end;
     width: 70%;
-    /* grid-area: header_nav */;
+    /* grid-area: header_nav */
+    ;
 }
 
 .contenedorLogo{
@@ -116,14 +123,6 @@ nav{
     text-align: center;
 }
 
-/* .div_index_main{
-    grid-area: main_div;
-}
-
-.img_index_main{
-    grid-area: main_img;
-} */
-
 .productos{
     grid-area: productos;
 }
@@ -139,7 +138,134 @@ nav{
     background-color: yellow;
 }
 
+/* .div_index_main{
+    grid-area: main_div;
+}
+
+.img_index_main{
+    grid-area: main_img;
+} */
 
 
 
 
+/* ---------------- NOSOTROS.HTML ---------------- */
+
+
+#navegacion{
+    display: grid;
+
+    grid-template-areas:    
+                        "headerNavegacion  headerNavegacion headerNavegacion"
+                        "mainNavegacion    mainNavegacion   asideNavegacion"
+                        "footerNavegacion  footerNavegacion footerNavegacion";
+
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows: 70vh 30vh;
+
+}
+
+.headerNavegacion{
+    grid-area: headerNavegacion;
+}
+
+.mainNavegacion{
+    grid-area: mainNavegacion;
+}
+
+.asideNavegacion{
+    grid-area: asideNavegacion;
+}
+
+.footerNavegacion{
+    grid-area: footerNavegacion;
+}
+
+/* ---------------- VENTAS.HTML ---------------- */
+
+
+#ventas{
+    display: grid;
+
+    grid-template-areas:    
+                        "headerVentas  headerVentas headerVentas"
+                        "mainVentas    mainVentas   mainVentas"
+                        "footerVentas  footerVentas footerVentas";
+
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows: 70vh 30vh;
+
+}
+
+.headerVentas{
+    grid-area: headerVentas;
+}
+
+.mainVentas{
+    grid-area: mainVentas;
+}
+
+.footerVentas{
+    grid-area: footerVentas;
+}
+
+/* ---------------- GALERIA.HTML ---------------- */
+
+
+#galeria{
+    display: grid;
+
+    grid-template-areas:    
+                        "headerGaleria  headerGaleria headerGaleria"
+                        "mainGaleria    mainGaleria   mainGaleria"
+                        "footerGaleria  footerGaleria footerGaleria";
+
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows: 70vh 30vh;
+
+}
+
+.headerGaleria{
+    grid-area: headerGaleria;
+}
+
+.mainGaleria{
+    grid-area: mainGaleria;
+}
+
+.footerGaleria{
+    grid-area: footerGaleria;
+}
+
+
+/* ---------------- CONTACTANOS.HTML ---------------- */
+
+
+#contactanos{
+    display: grid;
+
+    grid-template-areas:    
+                        "headerContactanos  headerContactanos headerContactanos"
+                        "asideContactanos   mainContactanos   footerContactanos"
+                        "asideContactanos   mainContactanos   footerContactanos";
+
+    grid-template-columns: 15vw 70vw 15vw;
+    grid-template-rows: 70vh 30vh;
+
+}
+
+.headerContactanos{
+    grid-area: headerContactanos;
+}
+
+.mainContactanos{
+    grid-area: mainContactanos;
+}
+
+.asideContactanos{
+    grid-area: asideContactanos;
+}
+
+.footerContactanos{
+    grid-area: footerContactanos;
+}
