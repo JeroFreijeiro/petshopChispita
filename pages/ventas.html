@@ -9,100 +9,165 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
 
 
-    <!-- Bootstrap -->
+    <!--CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!-- CDN FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- mi CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div id="ventas">
-        <div class="headerVentas">
-            <header style="background-color: orange;">
-                <h1>Catálogo de productos</h1>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./contactanos.html">Contactanos</a></li>
-                        <li><a href="./galeria.html">Galeria</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./ventas.html">Ventas</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+    <div class="container-fluid">
 
-        <div class="mainVentas">
-            <main style="background-color: pink;">
-                <div class="ventas">
-                    <section>
-                        <h2>Alimento</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et cumque sit. Ut, neque
-                            omnis.
-                        </p>
-                        <article>
-                            <img src="" alt="">
-                            <p>Nombre producto</p>
-                            <p>Descripcion:</p>
-                            <p>Precio</p>
-                            <input type="button" value="Añadir al carrito">
-                        </article>
-                    </section>
+        <header id="header" class="row">
+            <h1 class="col-lg-6 col-md-8 col-sm-12 text-center">Productos más vendidos</h1>
+            <nav class="col-lg-6 col-md-4 col-sm-12">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./contactanos.html">Contactanos</a></li>
+                    <li><a href="./galeria.html">Galeria</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./ventas.html">Ventas</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                    <section>
-                        <h2>Alimento</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et cumque sit. Ut, neque
-                            omnis.
-                        </p>
-                        <article>
-                            <img src="" alt="">
-                            <p>Nombre producto</p>
-                            <p>Descripcion:</p>
-                            <p>Precio</p>
-                            <input type="button" value="Añadir al carrito">
-                        </article>
-                    </section>
+        <main class="row">
 
-                    <section>
-                        <h2>Alimento</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et cumque sit. Ut, neque
-                            omnis.
-                        </p>
-                        <article>
-                            <img src="" alt="">
-                            <p>Nombre producto</p>
-                            <p>Descripcion:</p>
-                            <p>Precio</p>
-                            <input type="button" value="Añadir al carrito">
-                        </article>
-                    </section>
+            <section class="col-lg-12 col-md-12 col-sm-12 d-flex flex-wrap justify-content-center gap-5">
 
-                    <section>
-                        <h2>Alimento</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et cumque sit. Ut, neque
-                            omnis.
-                        </p>
-                        <article>
-                            <img src="" alt="">
-                            <p>Nombre producto</p>
-                            <p>Descripcion:</p>
-                            <p>Precio</p>
-                            <input type="button" value="Añadir al carrito">
-                        </article>
-                    </section>
+                <!-- BOOTSTRAP CARDS -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/img/producto.jpg" class="card-img-top"
+                        alt="producto comercializado alimento para mascotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento balanceado canino</h5>
+                        <p class="card-text">Alimento premium a base de los mejores nutrientes.</p>
+                        <p class="card-text">Precio: $3000 el kg.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
                 </div>
-            </main>
-        </div>
 
-        <div class="footerVentas">
-            <footer style="background-color: yellow;">
-                <hr>
-                <p>Todos los derechos reservados - PetShop Chispita</p>
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/img/producto.jpg" class="card-img-top"
+                        alt="producto comercializado alimento para mascotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento balanceado canino</h5>
+                        <p class="card-text">Alimento premium a base de los mejores nutrientes.</p>
+                        <p class="card-text">Precio: $3000 el kg.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/img/producto.jpg" class="card-img-top"
+                        alt="producto comercializado alimento para mascotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento balanceado canino</h5>
+                        <p class="card-text">Alimento premium a base de los mejores nutrientes.</p>
+                        <p class="card-text">Precio: $3000 el kg.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/img/producto.jpg" class="card-img-top"
+                        alt="producto comercializado alimento para mascotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento balanceado canino</h5>
+                        <p class="card-text">Alimento premium a base de los mejores nutrientes.</p>
+                        <p class="card-text">Precio: $3000 el kg.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/img/producto.jpg" class="card-img-top"
+                        alt="producto comercializado alimento para mascotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento balanceado canino</h5>
+                        <p class="card-text">Alimento premium a base de los mejores nutrientes.</p>
+                        <p class="card-text">Precio: $3000 el kg.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/img/producto.jpg" class="card-img-top"
+                        alt="producto comercializado alimento para mascotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento balanceado canino</h5>
+                        <p class="card-text">Alimento premium a base de los mejores nutrientes.</p>
+                        <p class="card-text">Precio: $3000 el kg.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/img/producto.jpg" class="card-img-top"
+                        alt="producto comercializado alimento para mascotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento balanceado canino</h5>
+                        <p class="card-text">Alimento premium a base de los mejores nutrientes.</p>
+                        <p class="card-text">Precio: $3000 el kg.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../assets/img/producto.jpg" class="card-img-top"
+                        alt="producto comercializado alimento para mascotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimento balanceado canino</h5>
+                        <p class="card-text">Alimento premium a base de los mejores nutrientes.</p>
+                        <p class="card-text">Precio: $3000 el kg.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row">
+                <h2
+                    style="text-align: center; padding-top: 15px; border: solid 2px black; margin: 10px;justify-content: center; background-color: lightblue; color: white;">
+                    PROMOCIONES DEL MES</h2>
+            </section>
+        </main>
+
+        <div class="footer_index row">
+
+            <footer>
+                <div class="col-lg-8 col-md-8 col-sm-12 derechos">
+                    <ul>
+                        <li>Av. Libertador 5555 - CABA</li>
+                        <li>Teléfono 4444-4444</li>
+                        <li>Celular 11-1111-1111</li>
+                        <li>Todos los derechos reservados - PetShop Chispita</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 rrss">
+                    <a target="_blank" href="https://twitter.com/?lang=es">
+                        <i class="fa-brands fa-twitter fa-3x"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram fa-3x"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook fa-3x"></i>
+                    </a>
+                    <a target="_blank" href="https://web.whatsapp.com/">
+                        <i class="fa-brands fa-whatsapp fa-3x"></i>
+                    </a>
+                </div>
             </footer>
         </div>
+
     </div>
 
 
@@ -110,7 +175,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-        
+
 </body>
 
 </html>

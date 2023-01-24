@@ -9,9 +9,15 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
 
 
-    <!-- Bootstrap -->
+    <!-- CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <!-- CDN FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- mi CSS -->
@@ -19,11 +25,12 @@
 </head>
 
 <body>
-    <div id="contactanos">
-        <div class="headerContactanos">
-            <header style="background-color: orange;">
-                <h1></h1>
-                <nav>
+    <div class="container-fluid"> 
+        
+        <div class="row">
+            <header>
+                <h1 class="col-lg-6 col-md-6 col-sm-12">Envíanos tus datos para ponernos en contacto!</h1>
+                <nav class="col-lg-6 col-md-6 col-sm-12">
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./contactanos.html">Contactanos</a></li>
@@ -35,85 +42,82 @@
             </header>
         </div>
 
-        <div class="mainContactanos">
-            <main style="background-color: pink;">
+        <div class="row">
+            <main class="row">
 
-                <form>
-                    <fieldset>
+                <div class="col-lg-6 col-md-4 col-sm-12">
+                    <aside>
+                        <img src="../assets/img/img2.jpg" alt="">
+                    </aside>
+                </div>
 
-                        <legend>PetShop Chispita- Contactanos</legend>
-                        <div>
-                            <input type="text" placeholder="Nombre">
-                            <!-- <label for="">Nombre:</label>
-                <input type="text" name="" id="" required> -->
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <form>
+                        <legend class="h1">Contactanos</legend>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label"></label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre">
                         </div>
-
-                        <div>
-                            <label for="">Apellido:</label>
-                            <input type="text" name="" id="">
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label"></label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Apellido">
                         </div>
-
-                        <div>
-                            <label for="">Password:</label>
-                            <input type="password" name="" id="">
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label"></label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Nº celular">
                         </div>
-
-                        <div>
-                            <label for="id_femenino">Femenino</label>
-                            <input type="radio" name="sexo" id="id_femenino" value="f">
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label"></label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Femenino / Masculino">
                         </div>
-
-                        <div>
-                            <label for="id_masculino">Masculino</label>
-                            <input type="radio" name="sexo" id="id_masculino" value="m">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email address">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
-
-                        <div>
-                            <label for="id_otro">Otro</label>
-                            <input type="radio" name="sexo" id="id_otro" value="o">
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label"></label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Dejanos un mensaje">
                         </div>
-
-                        <div>
-                            <label for="">E-mail:</label>
-                            <input type="email" name="" id="">
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Acepta terminos y condiciones</label>
                         </div>
-
-                        <div>
-                            <textarea name="" id="" cols="30" rows="10">Déjanos un mensaje</textarea>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" name="acepta" id="id_terminos_y_condiciones">
-                            <label for="id_terminos_y_condiciones">Acepta términos y condicones</label>
-                        </div>
-
-                        <div>
-                            <input type="submit" value="Enviar">
-                        </div>
-
-                        <div>
-                            <input type="reset" value="Borrar formulario">
-                        </div>
-
-                    </fieldset>
-                </form>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
             </main>
         </div>
 
-        <div class="asideContactanos">
-            <aside style="background-color: lightblue;">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aperiam maiores praesentium eveniet
-                    similique perferendis facilis voluptates sit vitae quod!</p>
-            </aside>
-        </div>
+        <footer class="footer_index row">
 
-        <div class="footerContactanos">
-            <footer style="background-color: yellow;">
-                <hr>
-                <p>Todos los derechos reservados - PetShop Chispita</p>
-            </footer>
-        </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 derechos">
+                <ul>
+                    <li>Av. Libertador 5555 - CABA</li>
+                    <li>Teléfono 4444-4444</li>
+                    <li>Celular 11-1111-1111</li>
+                    <li>Todos los derechos reservados - PetShop Chispita</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 rrss">
+                <a target="_blank" href="https://twitter.com/?lang=es">
+                    <i class="fa-brands fa-twitter fa-3x"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram fa-3x"></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook fa-3x"></i>
+                </a>
+                <a target="_blank" href="https://web.whatsapp.com/">
+                    <i class="fa-brands fa-whatsapp fa-3x"></i>
+                </a>
+            </div>
+        </footer>
     </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
