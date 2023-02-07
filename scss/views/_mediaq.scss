@@ -1,0 +1,35 @@
+/* @media screen and (max-width: 720px) {
+    #productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #servicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
+    }    
+} */
+
+@media screen and (min-width: 400px){
+    body{
+        background-color: map-get($paletaDeColores , fondo)
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-color: map-get($paletaDeColores , fondo);
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-color: map-get($paletaDeColores , fondo);
+    }
+}

@@ -1,0 +1,18 @@
+@mixin width ($ancho) {
+    width: $ancho;
+} 
+
+/* @mixin crear_contenedor_grid ($columnas, $filas, $gap){
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    gap: $gap;
+}
+
+@mixin crear_contenedor_areas ($columnas, $filas, $areas, $gap){
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    grid-template-areas: $areas;
+    gap: $gap;
+} */

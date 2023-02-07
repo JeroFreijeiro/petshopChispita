@@ -1,0 +1,22 @@
+.footer_index{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: map-get($paletaDeColores , secundario);
+    .derechos{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: left;
+        gap: 5;
+        .derechos ul li{
+            list-style-type: none;
+        }
+    }
+
+    .rrss{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 5;
+    }
+}
